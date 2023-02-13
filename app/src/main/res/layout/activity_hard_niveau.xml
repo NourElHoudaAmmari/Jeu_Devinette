@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HardNiveauActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFDFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:text="Deviner le nombre"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:layout_marginTop="120dp"
+            android:text="Nom :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameValue1"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="75dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/gamescore1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="170dp"
+            android:text="Score :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scor1"
+            android:hint="0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countdown_text1"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textColor="#090909"
+            android:textSize="24sp"
+            android:layout_marginLeft="300dp"
+            />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Je pense à un nombre compris entre 1 et 1 000\n
+                 Pouvez-vous le deviner ?? \n"
+            android:textColor="@color/black"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="48dp"
+            />
+        <EditText
+            android:id="@+id/editId1"
+            android:layout_width="348dp"
+            android:layout_height="67dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="ENTRER"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:onClick="clickFunction1"
+            android:text="Deviner"
+            android:textSize="28sp"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button"/>
+        <Button
+            android:id="@+id/newbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:onClick="nouvellepartie"
+            android:text="Nouvelle partie"
+            android:textSize="25sp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/nouvellepartiebtn"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
